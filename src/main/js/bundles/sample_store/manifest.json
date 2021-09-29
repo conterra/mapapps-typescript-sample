@@ -1,0 +1,24 @@
+{
+    "name": "sample_store",
+    "version": "0.0.1",
+    "main": "",
+    "i18n": [],
+    "dependencies": {
+        "apprt-request": "^4.12.0",
+        "store-api": "^4.12.0",
+        "esri": "^4.20.0"
+    },
+    "components": [
+        {
+            "name": "SampleStore",
+            "provides": ["ct.api.Store"],
+            "propertiesConstructor": true,
+            "properties": {
+                "id": "sample-store",
+                "title": "SampleStore",
+                "useIn": ["search"],
+                "searchAttribute": "title"
+            }
+        }
+    ]
+}
